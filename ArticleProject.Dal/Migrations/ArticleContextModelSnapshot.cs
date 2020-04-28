@@ -31,6 +31,9 @@ namespace ArticleProject.Dal.Migrations
                     b.Property<DateTime>("Birthdate")
                         .HasColumnType("datetime2");
 
+                    b.Property<Guid>("CommentsID")
+                        .HasColumnType("uniqueidentifier");
+
                     b.Property<string>("CreatedADUserName")
                         .HasColumnType("nvarchar(max)");
 
@@ -54,6 +57,9 @@ namespace ArticleProject.Dal.Migrations
 
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<Guid>("LikeID")
+                        .HasColumnType("uniqueidentifier");
 
                     b.Property<string>("ModifiedADUserName")
                         .HasColumnType("nvarchar(max)");

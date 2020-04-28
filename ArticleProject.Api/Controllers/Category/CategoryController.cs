@@ -19,13 +19,19 @@ namespace ArticleProject.Api.Controllers
             this.categoryService = categoryService;
         }
         /*
-        *  localhost:port/api/Category/Insert      
+        *  localhost:port/api/AppUser/Insert      
         * I tested it on postman and put the object in raw
         * Example Json:
         * {
-	            "Name":"Test",
-	            "Description":"Test"
-            }
+           "UserName":"Test",
+           "Password":"123456789",
+           "Address":"TestAddress",
+           "PhoneNumber":"123456789",
+           "ImagePath":"",
+           "Name":"TestName",
+           "LastName":"TestSurname",
+           "Email":"test@test.com.tr"
+           }
         */
         [Route("Insert")]
         public IActionResult Insert(Category category)
@@ -34,7 +40,7 @@ namespace ArticleProject.Api.Controllers
             return Ok("Success");
         }
         /*
-      *localhost:port/api/Category/Find/{id}     
+      *localhost:port/api/AppUser/Find/{id}     
       */
         [Route("Find/{id}")]
         public IActionResult Find(Guid id)
@@ -43,14 +49,35 @@ namespace ArticleProject.Api.Controllers
             return Ok(category);
         }
         /*
-         *  localhost:port/api/Category/Insert      
+         *  localhost:port/api/AppUser/Insert      
          * I tested it on postman and put the object in raw
          * Example Json:
          * {
-	        "Name":"Test2",
-	        "Description":"Test2",
-	        "ID":"15D5D79F-3A7E-41D7-23AE-08D7EBC21BC2"
-            }
+        "userName": "TEST",
+        "password": "123456789",
+        "address": "TEST",
+        "phoneNumber": "123456789",
+        "imagePath": "",
+        "name": "TEST",
+        "lastName": "TEST",
+        "email": "berkcolak4@gmail.com",
+        "birthdate": "0001-01-01T00:00:00",
+        "lastLogin": "0001-01-01T00:00:00",
+        "commentsID": "00000000-0000-0000-0000-000000000000",
+        "likeID": "00000000-0000-0000-0000-000000000000",
+        "blogs": [],
+        "comments": [],
+        "likes": [],
+        "id": "16410e28-795b-42d3-7b87-08d7ebbb0af7",
+        "createdComputerName": "DESKTOP-R3VKOVJ",
+        "createdIp": "",
+        "createdDate": "2020-04-29T00:28:11.2003994",
+        "createdADUserName": "",
+        "modifiedComputerName": null,
+        "modifiedIp": null,
+        "modifiedDate": "0001-01-01T00:00:00",
+        "modifiedADUserName": null
+        }
          */
         [Route("Update")]
         public IActionResult Update(Category category)
@@ -59,7 +86,7 @@ namespace ArticleProject.Api.Controllers
             return Ok("Success");
         }
         /*
-        *localhost:port/api/Category/Delete/{id}     
+        *localhost:port/api/AppUser/Delete/{id}     
         */
         [Route("Delete/{id}")]
         public IActionResult Delete(Guid id)
