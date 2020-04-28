@@ -1,16 +1,16 @@
-Kullanılan Design Pattern'ler
+KullanÄ±lan Design Pattern'ler
 Unit Of Work
 Database Factory
-Repository DP (Servis bazlı yapıldı tam olarak Resository Pattern'i yansıtmayabilir.)
+Repository DP (Servis bazlÄ± yapÄ±ldÄ± tam olarak Resository Pattern'i yansÄ±tmayabilir.)
 
-Kullandığım Teknolojiler 
-EF Core (Daha önce 4 projede kullandım )
+KullandÄ±ÄŸÄ±m Teknolojiler 
+EF Core (Daha Ã¶nce 4 projede kullandÄ±m )
 
-Daha geniş bir vaktim olsaydı sanırsam UI tarafını yazardım. Db ve .Net tarafı için yapılan geliştirmeler yeterli seviye de olduğunu düşünüyorum daha fazla geliştirilebilir fakat kısa süreli ve ileriye dönük bir proje olmadığından ötürü yetebileceğini düşünüyorum.
+Daha geniÅŸ bir vaktim olsaydÄ± sanÄ±rsam UI tarafÄ±nÄ± yazardÄ±m. Db ve .Net tarafÄ± iÃ§in yapÄ±lan geliÅŸtirmeler yeterli seviye de olduÄŸunu dÃ¼ÅŸÃ¼nÃ¼yorum daha fazla geliÅŸtirilebilir fakat kÄ±sa sÃ¼reli ve ileriye dÃ¶nÃ¼k bir proje olmadÄ±ÄŸÄ±ndan Ã¶tÃ¼rÃ¼ yetebileceÄŸini dÃ¼ÅŸÃ¼nÃ¼yorum.
 
-Her bir controller'a gerekli commentleri yazdım hangi parametrelerin gönderilmesi veya nasıl ilerlenmesi gibi veritabanı için 
+Her bir controller'a gerekli commentleri yazdÄ±m hangi parametrelerin gÃ¶nderilmesi veya nasÄ±l ilerlenmesi gibi veritabanÄ± iÃ§in 
 Add-Migration V2
 Update-Database
-yazılması yeterli olacaktır.
+yazÄ±lmasÄ± yeterli olacaktÄ±r.
 
-Hazır db scripti ArticleDB'yi de kullanabilirsiniz.
+HazÄ±r db scripti ArticleDB'yi de kullanabilirsiniz.
