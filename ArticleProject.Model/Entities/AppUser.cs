@@ -23,8 +23,6 @@ namespace ArticleProject.Model.Entities
         public string Email { get; set; }
         public DateTime Birthdate { get; set; }
         public DateTime LastLogin { get; set; }
-        public Guid CommentsID { get; set; }
-        public Guid LikeID { get; set; }
         public virtual ICollection<Blog> Blogs { get; set; }
         public virtual ICollection<Comment> Comments { get; set; }
         public virtual ICollection<Like> Likes { get; set; }

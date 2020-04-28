@@ -18,7 +18,24 @@ namespace ArticleProject.Api.Controllers
         {
             this.blogService = blogService;
         }
-      
+
+        /*
+       *  localhost:port/api/Blog/Insert      
+       * I tested it on postman and put the object in raw
+       * Example Json:
+       * {
+       "Header":"Test",
+       "Description":"Test",
+       "Content":"Test",
+       "Image":"Test",
+       "Homepage":true,
+       "Confirmation":true,
+       "ReadNumber":0,
+       "UsersID":"18DBE0B8-0F3F-408F-BB36-08D7EBC2AC6F",
+       "CategoryID":"15D5D79F-3A7E-41D7-23AE-08D7EBC21BC2",
+	
+    }
+       */
         [Route("Insert")]
         public IActionResult Insert(Blog blog)
         {
@@ -34,6 +51,21 @@ namespace ArticleProject.Api.Controllers
             Blog blog = blogService.FindById(id);
             return Ok(blog);
         }
+        /*
+        *  localhost:port/api/Blog/Insert      
+        * I tested it on postman and put the object in raw
+        * Example Json:
+        * "Header":"Test",
+       "Description":"Test",
+       "Content":"Test",
+       "Image":"Test",
+       "Homepage":true,
+       "Confirmation":true,
+       "ReadNumber":0,
+       "UsersID":"18DBE0B8-0F3F-408F-BB36-08D7EBC2AC6F",
+       "CategoryID":"15D5D79F-3A7E-41D7-23AE-08D7EBC21BC2",
+       "ID":"62700B1D-06E2-4B96-456F-08D7EBC390BC"
+        */
         [Route("Update")]
         public IActionResult Update(Blog blog)
         {
